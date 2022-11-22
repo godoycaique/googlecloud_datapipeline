@@ -27,15 +27,15 @@ jobs:
     - name: Terraform Init
       run: terraform init
       env:
-        google_credentials: ${{ secrets.google_credentials }} 
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }} 
     
     - name: Terraform Plan
       run: terraform plan -lock=false
       env:
-        google_credentials: ${{ secrets.google_credentials }} 
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }} 
     
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: terraform apply -auto-approve
       env:
-        google_credentials: ${{ secrets.google_credentials }} 
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }} 
