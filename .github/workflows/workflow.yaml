@@ -1,7 +1,7 @@
 name: 'Terraform CI'
 
 on:
-  push
+  push:
     branches:
     - main
     paths:
