@@ -19,3 +19,6 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2004-07-01T00:00:00+00:00
 [2022-11-23 17:50:28,798] {http.py:104} INFO - Calling HTTP method
 [2022-11-23 17:50:28,813] {base.py:79} INFO - Using connection to: id: gcp-data-pipeline. Host: https://stack-gcp-data-pipeline-lwj3epzvha-uc.a.run.app, Port: None, Schema: , Login: , Password: None, extra: {}
 [2022-11-23 17:50:28,820] {http.py:129} INFO - Sending 'POST' to url: https://stack-gcp-data-pipeline-lwj3epzvha-uc.a.run.app/download_combustivel
+[2022-11-23 17:54:29,926] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=dag_combustivel, task_id=get_op, execution_date=20040701T000000, start_date=20221123T175028, end_date=20221123T175429
+[2022-11-23 17:54:30,059] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-23 17:54:30,201] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

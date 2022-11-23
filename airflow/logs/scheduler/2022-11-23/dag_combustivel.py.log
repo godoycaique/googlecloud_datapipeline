@@ -3415,3 +3415,39 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to DataprocCr
 [2022-11-23 17:51:54,444] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
 [2022-11-23 17:51:54,477] {logging_mixin.py:109} INFO - [2022-11-23 17:51:54,476] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-11-23 17:51:54,575] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.843 seconds
+[2022-11-23 17:52:25,070] {processor.py:163} INFO - Started process (PID=19118) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:52:25,086] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:52:25,140] {logging_mixin.py:109} INFO - [2022-11-23 17:52:25,140] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:52:29,622] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:52:29,719] {logging_mixin.py:109} INFO - [2022-11-23 17:52:29,717] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:52:29,917] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 4.821 seconds
+[2022-11-23 17:53:00,433] {processor.py:163} INFO - Started process (PID=19173) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:53:00,435] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:53:00,437] {logging_mixin.py:109} INFO - [2022-11-23 17:53:00,437] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:53:01,194] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:53:01,221] {logging_mixin.py:109} INFO - [2022-11-23 17:53:01,220] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:53:01,278] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.852 seconds
+[2022-11-23 17:53:31,837] {processor.py:163} INFO - Started process (PID=19226) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:53:31,849] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:53:31,850] {logging_mixin.py:109} INFO - [2022-11-23 17:53:31,850] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:53:32,931] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:53:32,973] {logging_mixin.py:109} INFO - [2022-11-23 17:53:32,973] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:53:33,075] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 1.245 seconds
+[2022-11-23 17:54:03,693] {processor.py:163} INFO - Started process (PID=19271) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:54:03,695] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:54:03,697] {logging_mixin.py:109} INFO - [2022-11-23 17:54:03,697] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:54:04,145] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:54:04,176] {logging_mixin.py:109} INFO - [2022-11-23 17:54:04,175] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:54:04,235] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.547 seconds
+[2022-11-23 17:54:34,467] {processor.py:163} INFO - Started process (PID=19324) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:54:34,470] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:54:34,472] {logging_mixin.py:109} INFO - [2022-11-23 17:54:34,471] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:54:35,185] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:54:35,207] {logging_mixin.py:109} INFO - [2022-11-23 17:54:35,206] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:54:35,274] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.819 seconds
+[2022-11-23 17:55:05,908] {processor.py:163} INFO - Started process (PID=19378) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:55:05,911] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:55:05,913] {logging_mixin.py:109} INFO - [2022-11-23 17:55:05,913] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:55:06,713] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:55:06,747] {logging_mixin.py:109} INFO - [2022-11-23 17:55:06,747] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:55:06,812] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.914 seconds
