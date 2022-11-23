@@ -1,0 +1,180 @@
+[2022-11-23 17:22:58,647] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dag_combustivel.pyspark_task scheduled__2004-07-01T00:00:00+00:00 [queued]>
+[2022-11-23 17:22:58,691] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: dag_combustivel.pyspark_task scheduled__2004-07-01T00:00:00+00:00 [queued]>
+[2022-11-23 17:22:58,693] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-23 17:22:58,693] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-11-23 17:22:58,694] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-23 17:22:58,738] {taskinstance.py:1264} INFO - Executing <Task(DataprocSubmitJobOperator): pyspark_task> on 2004-07-01 00:00:00+00:00
+[2022-11-23 17:22:58,754] {standard_task_runner.py:52} INFO - Started process 5228 to run task
+[2022-11-23 17:22:58,762] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'dag_combustivel', 'pyspark_task', 'scheduled__2004-07-01T00:00:00+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/dag_combustivel.py', '--cfg-path', '/tmp/tmpz74g00f_', '--error-file', '/tmp/tmpkp569oao']
+[2022-11-23 17:22:58,766] {standard_task_runner.py:77} INFO - Job 51: Subtask pyspark_task
+[2022-11-23 17:22:58,926] {logging_mixin.py:109} INFO - Running <TaskInstance: dag_combustivel.pyspark_task scheduled__2004-07-01T00:00:00+00:00 [running]> on host 8c4b0b632010
+[2022-11-23 17:22:59,223] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=dag_combustivel
+AIRFLOW_CTX_TASK_ID=pyspark_task
+AIRFLOW_CTX_EXECUTION_DATE=2004-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2004-07-01T00:00:00+00:00
+[2022-11-23 17:22:59,225] {dataproc.py:1878} INFO - Submitting job
+[2022-11-23 17:22:59,637] {dataproc.py:1890} INFO - Job 6ce985bc-07b4-4055-8630-fa410a2363a1 submitted successfully.
+[2022-11-23 17:22:59,707] {dataproc.py:1903} INFO - Waiting for job 6ce985bc-07b4-4055-8630-fa410a2363a1 to complete
+[2022-11-23 17:23:40,800] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1905, in execute
+    job_id=job_id, region=self.region, project_id=self.project_id, timeout=self.wait_timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 433, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/dataproc.py", line 780, in wait_for_job
+    raise AirflowException(f'Job failed:\n{job}')
+airflow.exceptions.AirflowException: Job failed:
+reference {
+  project_id: "datapipeline01-369412"
+  job_id: "6ce985bc-07b4-4055-8630-fa410a2363a1"
+}
+placement {
+  cluster_name: "stack-data-pipeline"
+  cluster_uuid: "9e4b7aae-e626-4288-8ed4-9a6451fc71c9"
+}
+pyspark_job {
+  main_python_file_uri: "gs://data-pipeline-godoy-combustiveis-brasil-pyspark-code/main.py"
+  args: "--path_input"
+  args: "gs://data-pipeline-godoy-combustiveis-brasil-raw/combustiveis-brasil/2004/02/ca-2004-02.csv"
+  args: "--path_output"
+  args: "gs://data-pipeline-godoy-combustiveis-brasil-curated/combustiveis-brasil/2004/02/"
+  args: "--file_format"
+  args: "parquet"
+  args: "--bq_dataset"
+  args: "gasolina_brasil"
+  args: "--table_bq"
+  args: "tb_historico_combustivel_brasil"
+  jar_file_uris: "gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.23.2.jar"
+}
+status {
+  state: ERROR
+  details: "File not found: gs://data-pipeline-godoy-combustiveis-brasil-pyspark-code/main.py"
+  state_start_time {
+    seconds: 1669224215
+    nanos: 462764000
+  }
+}
+status_history {
+  state: PENDING
+  state_start_time {
+    seconds: 1669224180
+    nanos: 668661000
+  }
+}
+status_history {
+  state: SETUP_DONE
+  state_start_time {
+    seconds: 1669224180
+    nanos: 715060000
+  }
+}
+status_history {
+  state: RUNNING
+  state_start_time {
+    seconds: 1669224181
+    nanos: 700380000
+  }
+}
+driver_control_files_uri: "gs://dataproc-staging-sa-east1-770223952621-vrorrjtb/google-cloud-dataproc-metainfo/9e4b7aae-e626-4288-8ed4-9a6451fc71c9/jobs/6ce985bc-07b4-4055-8630-fa410a2363a1/"
+driver_output_resource_uri: "gs://dataproc-staging-sa-east1-770223952621-vrorrjtb/google-cloud-dataproc-metainfo/9e4b7aae-e626-4288-8ed4-9a6451fc71c9/jobs/6ce985bc-07b4-4055-8630-fa410a2363a1/driveroutput"
+job_uuid: "6ce985bc-07b4-4055-8630-fa410a2363a1"
+done: true
+
+[2022-11-23 17:23:40,814] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=dag_combustivel, task_id=pyspark_task, execution_date=20040701T000000, start_date=20221123T172258, end_date=20221123T172340
+[2022-11-23 17:23:40,850] {standard_task_runner.py:92} ERROR - Failed to execute job 51 for task pyspark_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/dataproc.py", line 1905, in execute
+    job_id=job_id, region=self.region, project_id=self.project_id, timeout=self.wait_timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 433, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/dataproc.py", line 780, in wait_for_job
+    raise AirflowException(f'Job failed:\n{job}')
+airflow.exceptions.AirflowException: Job failed:
+reference {
+  project_id: "datapipeline01-369412"
+  job_id: "6ce985bc-07b4-4055-8630-fa410a2363a1"
+}
+placement {
+  cluster_name: "stack-data-pipeline"
+  cluster_uuid: "9e4b7aae-e626-4288-8ed4-9a6451fc71c9"
+}
+pyspark_job {
+  main_python_file_uri: "gs://data-pipeline-godoy-combustiveis-brasil-pyspark-code/main.py"
+  args: "--path_input"
+  args: "gs://data-pipeline-godoy-combustiveis-brasil-raw/combustiveis-brasil/2004/02/ca-2004-02.csv"
+  args: "--path_output"
+  args: "gs://data-pipeline-godoy-combustiveis-brasil-curated/combustiveis-brasil/2004/02/"
+  args: "--file_format"
+  args: "parquet"
+  args: "--bq_dataset"
+  args: "gasolina_brasil"
+  args: "--table_bq"
+  args: "tb_historico_combustivel_brasil"
+  jar_file_uris: "gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.23.2.jar"
+}
+status {
+  state: ERROR
+  details: "File not found: gs://data-pipeline-godoy-combustiveis-brasil-pyspark-code/main.py"
+  state_start_time {
+    seconds: 1669224215
+    nanos: 462764000
+  }
+}
+status_history {
+  state: PENDING
+  state_start_time {
+    seconds: 1669224180
+    nanos: 668661000
+  }
+}
+status_history {
+  state: SETUP_DONE
+  state_start_time {
+    seconds: 1669224180
+    nanos: 715060000
+  }
+}
+status_history {
+  state: RUNNING
+  state_start_time {
+    seconds: 1669224181
+    nanos: 700380000
+  }
+}
+driver_control_files_uri: "gs://dataproc-staging-sa-east1-770223952621-vrorrjtb/google-cloud-dataproc-metainfo/9e4b7aae-e626-4288-8ed4-9a6451fc71c9/jobs/6ce985bc-07b4-4055-8630-fa410a2363a1/"
+driver_output_resource_uri: "gs://dataproc-staging-sa-east1-770223952621-vrorrjtb/google-cloud-dataproc-metainfo/9e4b7aae-e626-4288-8ed4-9a6451fc71c9/jobs/6ce985bc-07b4-4055-8630-fa410a2363a1/driveroutput"
+job_uuid: "6ce985bc-07b4-4055-8630-fa410a2363a1"
+done: true
+
+[2022-11-23 17:23:40,896] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-11-23 17:23:40,954] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
