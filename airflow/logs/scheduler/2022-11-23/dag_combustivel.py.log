@@ -3451,3 +3451,15 @@ airflow.exceptions.AirflowException: Invalid arguments were passed to DataprocCr
 [2022-11-23 17:55:06,713] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
 [2022-11-23 17:55:06,747] {logging_mixin.py:109} INFO - [2022-11-23 17:55:06,747] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-11-23 17:55:06,812] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.914 seconds
+[2022-11-23 17:55:36,916] {processor.py:163} INFO - Started process (PID=19423) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:55:36,918] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:55:36,920] {logging_mixin.py:109} INFO - [2022-11-23 17:55:36,920] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:55:37,357] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:55:37,376] {logging_mixin.py:109} INFO - [2022-11-23 17:55:37,375] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:55:37,418] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 0.507 seconds
+[2022-11-23 17:56:08,058] {processor.py:163} INFO - Started process (PID=19475) to work on /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:56:08,062] {processor.py:642} INFO - Processing file /opt/airflow/dags/dag_combustivel.py for tasks to queue
+[2022-11-23 17:56:08,066] {logging_mixin.py:109} INFO - [2022-11-23 17:56:08,066] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:56:09,201] {processor.py:654} INFO - DAG(s) dict_keys(['dag_combustivel']) retrieved from /opt/airflow/dags/dag_combustivel.py
+[2022-11-23 17:56:09,246] {logging_mixin.py:109} INFO - [2022-11-23 17:56:09,246] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:56:09,338] {processor.py:171} INFO - Processing /opt/airflow/dags/dag_combustivel.py took 1.300 seconds

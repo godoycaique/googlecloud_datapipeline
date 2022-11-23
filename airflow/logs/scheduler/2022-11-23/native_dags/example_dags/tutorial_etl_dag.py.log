@@ -2696,3 +2696,24 @@
 [2022-11-23 17:54:49,145] {logging_mixin.py:109} INFO - [2022-11-23 17:54:49,144] {dag.py:2398} INFO - Sync 1 DAGs
 [2022-11-23 17:54:49,230] {logging_mixin.py:109} INFO - [2022-11-23 17:54:49,229] {dag.py:2937} INFO - Setting next_dagrun for tutorial_etl_dag to None
 [2022-11-23 17:54:49,288] {processor.py:171} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.421 seconds
+[2022-11-23 17:55:19,805] {processor.py:163} INFO - Started process (PID=19398) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:55:19,808] {processor.py:642} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2022-11-23 17:55:19,811] {logging_mixin.py:109} INFO - [2022-11-23 17:55:19,810] {dagbag.py:500} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:55:19,892] {processor.py:654} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:55:19,913] {logging_mixin.py:109} INFO - [2022-11-23 17:55:19,913] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:55:19,947] {logging_mixin.py:109} INFO - [2022-11-23 17:55:19,947] {dag.py:2937} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2022-11-23 17:55:19,965] {processor.py:171} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.172 seconds
+[2022-11-23 17:55:51,045] {processor.py:163} INFO - Started process (PID=19450) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:55:51,048] {processor.py:642} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2022-11-23 17:55:51,050] {logging_mixin.py:109} INFO - [2022-11-23 17:55:51,049] {dagbag.py:500} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:55:51,127] {processor.py:654} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:55:51,152] {logging_mixin.py:109} INFO - [2022-11-23 17:55:51,152] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:55:51,196] {logging_mixin.py:109} INFO - [2022-11-23 17:55:51,196] {dag.py:2937} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2022-11-23 17:55:51,221] {processor.py:171} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.184 seconds
+[2022-11-23 17:56:21,890] {processor.py:163} INFO - Started process (PID=19500) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:56:21,897] {processor.py:642} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2022-11-23 17:56:21,900] {logging_mixin.py:109} INFO - [2022-11-23 17:56:21,900] {dagbag.py:500} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:56:22,010] {processor.py:654} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2022-11-23 17:56:22,051] {logging_mixin.py:109} INFO - [2022-11-23 17:56:22,051] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-11-23 17:56:22,127] {logging_mixin.py:109} INFO - [2022-11-23 17:56:22,126] {dag.py:2937} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2022-11-23 17:56:22,166] {processor.py:171} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.284 seconds
