@@ -1,0 +1,1 @@
+gcloud run deploy googlecloud-datapipeline --source . --region us-central1
